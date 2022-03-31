@@ -124,4 +124,13 @@ footer {
   text-align: center;
 }
 
+.btn-footer {
+  width: 6rem;
+  height: 3rem;
+}
+
+.input-footer {
+  height: 3rem;
+}
+
 /*# sourceMappingURL=app.css.map */
