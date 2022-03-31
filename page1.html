@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+  </link>
+  <title>PRODUIT BIO</title>
+</head>
+
+<body>
+
+
+  <header class="container col-12 row align-items-start ">
+    <div class="col-md-2"><img src="assets/images/Logo-Bio.webp" alt="logo" width="100"></div>
+
+    <div class="col-md-8 opt ">
+      <select>
+        <option value="valeur1">Legumes</option>
+        <option value="valeur2" selected>Fruits</option>
+        <option value="valeur3">produits Laitiaire</option>
+        <option value="valeur3">viand</option>
+      </select>
+      <input type="text" id="name" name="name" placeholder="Rechercher sur le site…" class="input-sec">
+
+      <button class="btn-recherche bg-success"> <i class='fas fa-search' style='font-size:24px'></i></i></button>
+    </div>
+
+
+    <div class="icon col-md-2 ">
+      <i class='far fa-heart ' style='font-size:24px; color: green; '></i>
+      <i class='fas fa-address-book' style='font-size:24px; color: green;'></i>
+      <i class='fas fa-archive' style='font-size:24px; color: green;'></i>
+       
+    </div>
+  </header>
+
+  <nav class="bg-success ">
+    <ul class="text-light text-uppercase fs-5 fw-bold">
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="page2.html">product</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#service">Service</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#shop">shop</a>
+      </li>
+      <li class="nav-item">
+        <team class="nav-link text-light" href="#pages">pages</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#blog">blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#contact">contact us</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section id="accueil" >
+    <div id="app-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#app-carousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#app-carousel" data-bs-slide-to="1" ></button>
+        <button type="button" data-bs-target="#app-carousel" data-bs-slide-to="2" ></button>
+
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item ">
+          <div class="carousel-item--1 active">
+            <img src="assets/images/tof-1.jpg" class="d-block w-100" alt="sider1">
+            <div class="carousel-caption d-none d-md-block fs-2 fw-bold   ">
+              <h5 class="titre">Manger pour rester en<span class="text-warning titre">Bonne santé </span></h5>
+              
+              <a data-scroll="" class="btn animated fadeInUpBig" href="#services"></a>
+            </div>
+
+          </div>
+        </div>
+        <div class="carousel-item active">
+          <div class="carousel-item--2">
+            <img src="assets/images/tof-2.jpg" class="d-block w-100" alt="sider2">
+            <div class="carousel-caption d-none d-md-block fs-2 fw-bold ">
+              <h5 class="titre">Manger pour rester en<span class="text-success titre">Bonne santé </span></h5>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-item--3">
+            <img src="assets/images/tof-3.webp" class="d-block w-100" alt="sider3">
+            <div class="carousel-caption d-none d-md-block fs-2 fw-bold ">
+              <h5 class="titre">Manger pour rester en<span class="text-warning titre">Bonne santé </span></h5>
+            </div>>
+          </div>
+        </div>
+
+      </div>
+  </section>
+  <div class="bg-success p-2"></div>
+  <div class="row m-4">
+    <div class="card col-3" style="width: 20rem;">
+      <img src="assets/images/produit/miel.jpg "  alt="miel">
+      <div class="card-body">
+        <h5 class="card-title fw-bold text-center">Miel Eucalyptus</h5>
+        <p class="card-text text-center">$ 25.00</p>
+      </div>
+    </div>
+    <div class="card col-3" style="width: 20rem;">
+      <img src="assets/images/produit/fromage.jpg" alt="fromage">
+      <div class="card-body">
+        <h5 class="card-title fw-bold text-center">Fromage</h5>
+        <p class="card-text text-center">$ 10.00</p>
+      </div>
+    </div>
+    <div class="card col-3 " style="width: 20rem;">
+      <img src="assets/images/produit/chocolat.jpg" alt="chocolat">
+      <div class="card-body">
+        <h5 class="card-title fw-bold text-center">chocolat bio</h5>
+        <p class="card-text text-center">$ 15.00</p>
+      </div>
+    </div>
+
+    <div class="card col-3 " style="width: 20rem;">
+      <img src="assets/images/produit/huile.webp" alt="huile">
+      <div class="card-body">
+        <h5 class="card-title fw-bold text-center">Huile d'olive</h5>
+        <p class="card-text text-center">$ 20.00</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 row bg-success m-1">
+   <div class="row col-md-3">
+      <main class="col-md-3"><i class='fas fa-donate' style='font-size:48px;color:white'></i></main>
+      <div class="col-md-9">
+        <h4>Secure payement</h4>
+        <p>100% secure payement</p>
+      </div>
+    </div>
+    <div class="row col-md-3">
+      <main class="col-md-3"><i class='fas fa-donate' style='font-size:48px;color:white'></i></main>
+      <div class="col-md-9">
+        <h4>Secure payement</h4>
+        <p>100% secure payement</p>
+      </div>
+    </div>
+    <div class="row col-md-3">
+      <main class="col-md-3"><i class='fas fa-gift' style='font-size:48px;color:white'></i></main>
+      <div class="col-9">
+        <h4>Cadeaux surprise</h4>
+        <p>100% secure payement</p>
+      </div>
+    </div>
+    <div class="row col-md-3">
+      <main class="col-md-3"><i class='fas fa-poll' style='font-size:48px;color:white'></i></main>
+      <div class="col-9">
+        <h4>Secure payement</h4>
+        <p>100% secure payement</p>
+      </div>
+    </div>
+
+  </div>
+   
+  <footer class=" bg-dark col-12">
+    <div class="footer-first-section  ">
+      <div class="row">
+        <div class="box-wrap col-md-3">
+          <header>
+            <h3 class="text-warning">company</h3>
+          </header>
+          <ul class="text-light  ">
+            <li><a href="#" class="text-light text-decoration-none">About</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Contact us</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Catalogue</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Origine</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Courses</a></li>
+
+          </ul>
+        </div>
+        <div class="box-wrap col-md-3 ">
+          <header>
+            <h3 class="text-warning">Contact</h3>
+          </header>
+          <h5><a class="text-light text-decoration-none"><i class='fas fa-map-marker-alt icon-footer '></i>Saint cyr l'école</a></h5>
+          <h5><a class="text-light text-decoration-none" href="tel:+9779813639131"><i class="fas fa-phone icon-footer "></i> +977
+              9813639131</a></h5>
+          <h5><a class="text-light text-decoration-none" href="mailto:info@educationpro.com"><i class="fas fa-envelope icon-footer "></i>
+              info@educationpro.com</a></h5>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f icon-footer"></i></a>
+            <a href="#"><i class="fab fa-twitter icon-footer"></i></a>
+            <a href="#"><i class="fab fa-instagram icon-footer"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g icon-footer"></i></a>
+          </div>
+        </div>
+        <div class="box-wrap col-md-3 ">
+          <header>
+            <h3 class="text-warning">Opening</h3>
+          </header>
+          <p class="text-light">Monday- Saturday</p>
+          <p class="text-light">8AM - 9PM</p>
+          <p class="text-light">Sanday</p>
+          <p class="text-light">8AM -12AM</p>
+
+        </div>
+        <div class="box-wrap col-md-3 ">
+          <header>
+            <h3 class="text-warning">New sletter</h3>
+          </header>
+          <p class="text-light">bienvenue</p>
+          <input type="email" id="Email" name="Email" placeholder="Your Email" >
+
+
+        </div>
+      </div>
+
+  </footer>
+
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
