@@ -158,3 +158,29 @@ footer{
   .input-footer{
     height: 3rem;
   }
+
+
+
+  .notification {
+    
+    color: white;
+    text-decoration: none;
+    padding: 11px 2px;
+    position: relative;
+ }
+    
+  
+  
+  .notification:hover {
+    background: orange;
+  }
+  
+  .notification .badge {
+    position: absolute;
+    top: 14px;
+    right: -13px;
+    padding: 9px  px;
+    background: orange;
+    color: white;
+    text-transform: none;
+  }
