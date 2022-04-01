@@ -16,10 +16,11 @@
 <body>
 
 
+  
   <header class="row align-items-start ">
     <div class="col-md-3"><img src="assets/images/Logo-Bio.webp" alt="logo" width="100"></div>
 
-    <div class="col-md-7 opt">
+    <div class="col-md-7 opt ">
       <select>
         <option value="valeur1">Legumes</option>
         <option value="valeur2" selected>Fruits</option>
@@ -33,29 +34,37 @@
 
 
     <div class="icon col-md-2 ">
-      <i class='far fa-heart ' style='font-size:24px; color: green; '></i>
-      <i class='fas fa-address-book' style='font-size:24px; color: green;'></i>
-      <i class='fas fa-archive' style='font-size:24px; color: green;'></i>
+      <i class='far fa-heart icone-header '  style="margin-right: 1.5rem;"></i>
+      <i class='fas fa-address-book icone-header'></i>
+      <i class='fas fa-archive   notification-2 '>
+        <span class="badge-2 bg-warning">3</span>
+      </i>
+    
     </div>
   </header>
 
   <nav class="bg-success ">
     <ul class="text-light text-uppercase fs-5 fw-bold">
-      <li class="nav-item">
-        <a class="nav-link text-light" href="#home">Home</a>
+      <li class="nav-item ">
+        <a class="nav-link text-light" href="page1.html">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-light" href="page1.html">product</a>
+        <a class="nav-link text-light dropdown-toggle" data-toggle="dropdown" href="#">product</a>
+        <span class="caret"></span></a>
+       
       </li>
       <li class="nav-item">
         <a class="nav-link text-light" href="#service">Service</a>
       </li>
-
-      <li class="nav-item">
-        <a class="nav-link text-light" href="#shop">shop</a>
+      
+      
+      <li class="nav-item notification">
+        <a class="nav-link text-light" href="#">shop</a>
+        <span class="badge">New</span>
       </li>
       <li class="nav-item">
-        <team class="nav-link text-light" href="#pages">pages</a>
+        <a class="nav-link text-light dropdown-toggle" data-toggle="dropdown" href="#pages">pages</a>
+        <span class="caret"></span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-light" href="#blog">blog</a>
@@ -65,6 +74,7 @@
       </li>
     </ul>
   </nav>
+
   <section id="accueil">
     <div id="app-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
 
