@@ -5,6 +5,7 @@ select {
 .input-sec {
   width: 20rem;
   height: 3rem;
+  margin-top: 1rem;
 }
 
 .btn-recherche {
@@ -59,6 +60,11 @@ nav li a {
   color: white;
   background-size: cover;
   background-position: center;
+}
+
+.icone-header {
+  font-size: 24px;
+  color: green;
 }
 
 .titre {
@@ -152,6 +158,27 @@ footer {
   background: orange;
   color: white;
   text-transform: none;
+}
+
+.notification-2 {
+  background-color: white;
+  color: green;
+  text-decoration: none;
+  padding: 15px 26px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+  font-size: 24px;
+}
+
+.badge-2 {
+  position: absolute;
+  top: -2px;
+  right: 6px;
+  padding: 2px 4px;
+  border-radius: 50%;
+  font-size: 1rem;
+  color: white;
 }
 
 /*# sourceMappingURL=app.css.map */
