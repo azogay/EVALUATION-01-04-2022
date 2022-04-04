@@ -27,7 +27,7 @@
         <option value="valeur3">produits Laitiaire</option>
         <option value="valeur3">viand</option>
       </select>
-      <input type="text" id="name" name="name" placeholder="Rechercher sur le site…" class="input-sec">
+      <input type="text" id="name" name="name" placeholder="Rechercher sur le site…" class="input-header">
 
       <button class="btn-recherche bg-success"> <i class='fas fa-search' style='font-size:24px'></i></i></button>
     </div>
@@ -130,7 +130,7 @@
 
     </div>
   </section>
-  <section>
+  <section class="card section-panier">
     <main>
       <div class="row ">
         <div class="col-md-3">
@@ -139,7 +139,7 @@
         <div class="col-md-3">
           <h3> Fraise Bio</h3>
           <p>Fruit star du printemps , le bonheur des petits et des grands</p>
-  
+
         </div>
         <div class="col-md-2">12.00 $</div>
         <div class="col-md-2">
@@ -147,10 +147,10 @@
           <input type="text" class="quantite input-panier">
           <button>+</button>
         </div>
-  
+
         <div class="priceTab col-md-1">120€</div>
         <i class="fa-solid fa-trash-can col-md-1"></i>
-  
+
       </div>
       <div class="row ">
         <div class="col-md-3">
@@ -159,7 +159,7 @@
         <div class="col-md-3">
           <h3>Orange Bio</h3>
           <p>Fruit star du printemps , le bonheur des petits et des grands</p>
-  
+
         </div>
         <div class="col-md-2">10.00 $</div>
         <div class="col-md-2">
@@ -167,10 +167,10 @@
           <input type="text" class="quantite input-panier">
           <button>+</button>
         </div>
-  
+
         <div class="priceTab col-md-1">100€</div>
         <i class="fa-solid fa-trash-can col-md-1"></i>
-  
+
       </div>
       <div class="row ">
         <div class="col-md-3">
@@ -179,7 +179,7 @@
         <div class="col-md-3">
           <h3> Kiwi Bio</h3>
           <p>Fruit star du printemps , le bonheur des petits et des grands</p>
-  
+
         </div>
         <div class="col-md-2">17.00 $</div>
         <div class="col-md-2">
@@ -187,16 +187,49 @@
           <input type="text" class="quantite input-panier">
           <button>+</button>
         </div>
-  
+
         <div class="priceTab col-md-1">170€</div>
         <i class="fa-solid fa-trash-can col-md-1"></i>
-  
+
       </div>
     </main>
-    <main>
-      
+    <main class="row m-md-4 ">
+      <div class="col-md-6">
+        <input type="text" id="name" name="name" placeholder="Entrer Your coupon">
+        <button>APPLY</button>
+      </div>
+
+      <div class="col-md-6 w-25 card div-panier ">
+        <table>
+          <tr class="col-12">
+            <td class="col-md-6">Cart Subtotal</td>
+            <td class="col-md-6 td-panier">120.00$</td>
+          </tr>
+          <tr class="col-12">
+            <td class="col-md-6">Shipping</td>
+            <td class="col-md-6 td-panier">Free</td>
+          </tr>
+          <tr class="col-12">
+            <td class="col-md-6">Your Save</td>
+            <td class="col-md-6 td-panier">90.00$</td>
+          </tr>
+        </table>
+        <div><hr></div>
+          <table>
+            <tr class="col-12 ">
+
+              <td class="col-md-6">Your Pay</td>
+              <td class="col-md-6 td-panier ">210.00$</td>
+            </tr>
+          </table>
+          
+
+       
+
+        <button class="btn-panier bg-secondary ">CHECKOUT</button>
+      </div>
     </main>
-    
+
   </section>
 
 

@@ -3,7 +3,7 @@
 select{
     height: 3rem;
 }
-.input-sec{
+.input-header{
     width: 20rem;
     height: 3rem;
     margin-top: 1rem;
@@ -231,4 +231,21 @@ footer{
     color: white;
     text-transform: capitalize;
     font-size: 20px;
+  }
+  .section-panier{
+    background-color: rgb(195, 245, 197);
+    width: 80%;
+    margin-left: 8rem;
+    padding: 2rem;
+    margin-top: 2rem;
+  }
+  .td-panier{
+    margin-left: 1rem;
+  }
+  .btn-panier{
+    color: white;
+    width: 13rem;
+  }
+  .div-panier{
+    margin-left: 15rem;
   }
