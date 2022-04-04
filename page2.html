@@ -36,13 +36,15 @@
     <div class="icon col-md-2 ">
       <i class='far fa-heart icone-header ' style="margin-right: 1.5rem;"></i>
       <i class='fas fa-address-book icone-header'></i>
-      <i class='fas fa-archive   notification-2 '>
-        <span class="badge-2 bg-warning">3</span>
-     
-      </i>
-
+      <a href="produit"><i class='fas fa-archive   notification-2 '></i></a>
+      <span><a href="#" onclick="showHideElement('shopping_card_details')"><span
+            class="badge-2 bg-warning">3</span></a></span>
     </div>
   </header>
+
+  <div id="shopping_card_details">
+    <h1>test text</h1>
+  </div>
 
   <nav class="bg-success ">
     <ul class="text-light text-uppercase fs-5 fw-bold">
@@ -52,7 +54,6 @@
       <li class="nav-item">
         <a class="nav-link text-light dropdown-toggle" data-toggle="dropdown" href="#">product</a>
         <span class="caret"></span></a>
-
       </li>
       <li class="nav-item">
         <a class="nav-link text-light" href="#service">Service</a>
@@ -131,7 +132,7 @@
 
     </div>
   </section>
-  <section class="card section-panier">
+  <section class="card section-panier " id="produit">
     <div>
       <div class="row ">
         <div class="col-md-3">
@@ -215,17 +216,19 @@
             <td class="col-md-6 td-panier">90.00$</td>
           </tr>
         </table>
-        <div><hr></div>
-          <table>
-            <tr class="col-12 ">
+        <div>
+          <hr>
+        </div>
+        <table>
+          <tr class="col-12 ">
 
-              <td class="col-md-6">Your Pay</td>
-              <td class="col-md-6 td-panier ">210.00$</td>
-            </tr>
-          </table>
-          
+            <td class="col-md-6">Your Pay</td>
+            <td class="col-md-6 td-panier ">210.00$</td>
+          </tr>
+        </table>
 
-       
+
+
 
         <button class="btn-panier bg-success ">CHECKOUT</button>
       </div>
@@ -298,5 +301,6 @@
   </footer>
 
   <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
 
 </body>

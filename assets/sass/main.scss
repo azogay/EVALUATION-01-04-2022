@@ -1,256 +1,280 @@
-
-
-select{
-    height: 3rem;
-}
-.input-header{
-  width: 20rem;
+select {
   height: 3rem;
+}
+
+.input-header {
+  width     : 20rem;
+  height    : 3rem;
   margin-top: 1rem;
 }
-.btn-recherche{
-    width: 4rem;
-    height: 3rem;
-    color: white;
+
+.btn-recherche {
+  width : 4rem;
+  height: 3rem;
+  color : white;
 }
-  
-  nav ul{
-       list-style: none;
-   }
-   nav li {
-    display: inline-block;
-   
-    padding: 0px;
-   
-    text-align: center;
-    line-height: 60px;
 
-    &:hover{
-    
-        background-color: orange;
-        
-      }
-   }
-   .icon{
-       padding: 1rem;
-   }
-   nav li a {
-       display: block;
-   }
-   #accueil {
-    position: relative;
-    width   : 100%;
-    height  : 90vh;
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+
+  padding: 0px;
+
+  text-align : center;
+  line-height: 60px;
+
+  &:hover {
+
+    background-color: orange;
+
   }
+}
 
-   #app-carousel {
+.icon {
+  padding: 1rem;
+}
+
+nav li a {
+  display: block;
+}
+
+#accueil {
+  position: relative;
+  width   : 100%;
+  height  : 90vh;
+}
+
+#app-carousel {
+  width : 100%;
+  height: 100%;
+
+  .carousel-inner {
     width : 100%;
     height: 100%;
-  
-    .carousel-inner {
+
+    .carousel-item {
       width : 100%;
       height: 100%;
-  
-      .carousel-item {
-        width : 100%;
-        height: 100%;
-  
-        &>* {
-          width              : 100%;
-          height             : 100%;
-          color              : white;
-          background-size    : cover;
-          background-position: center;
-        }
+
+      &>* {
+        width              : 100%;
+        height             : 100%;
+        color              : white;
+        background-size    : cover;
+        background-position: center;
       }
     }
   }
-  
-  .icone-header{
-    font-size:24px;
-     color: green;
-    
-  }
-  
-
-  .titre {
-    position: relative;
-    top     : 48.5%;
-
-    width: 100%;
-
-    text-align    : center;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   font-size: 3rem;
-    text-transform: uppercase;
-    
-    margin        : 2rem;
-    
-
-
-    & {
-      animation-duration       : .8s;
-      animation-timing-function: ease-in-out;
-      animation-name           : gaucheVersDroite;
-    }
-
-  }
-
-
-
-  @keyframes gaucheVersDroite {
-
-    0% {
-      opacity  : 0;
-      transform: translateX(-10rem);
-
-    }
-
-    70% {
-      opacity  : .6;
-      transform: translateX(10rem);
-
-    }
-
-    100% {
-      opacity  : 1;
-      transform: translateX(0);
-    }
-  }
-
-
-  @keyframes droiteVersGauche {
-
-    0% {
-      opacity  : 0;
-      transform: translateX(-10rem);
-
-    }
-
-    70% {
-      opacity  : .5;
-      transform: translateX(10rem);
-
-    }
-
-    100% {
-      opacity  : 1;
-      transform: translateX(0);
-    }
-  }
-  .mesur{
-    width: 19rem;
-    height: 20rem;
-  }
-
-footer{
-    display: block;
-   
 }
-  .icon-footer{
-      color: white;
-  }
 
-  .liste{
-    display: inline-block;
-    list-style: none;
-    text-align: center;
-    
-   
-  }
-  .btn-footer{
-    width: 6rem;
-    height: 3rem;
-  }
-  .input-footer{
-    height: 3rem;
-  }
-
-
-
-  .notification {
-    
-    color: white;
-    text-decoration: none;
-    padding: 11px 2px;
-    position: relative;
- }
-    
-  
-  
-  .notification:hover {
-    background: orange;
-  }
-  
-  .notification .badge {
-    position: absolute;
-    top: 14px;
-    right: -13px;
-    padding: 9px  px;
-    background: orange;
-    color: white;
-    text-transform: none;
-  }
-
-  .notification-2 {
-    
-    background-color: white;
-    color: green;
-  text-decoration: none;
-  padding: 15px 26px;
-  position: relative;
-  display: inline-block;
-  border-radius: 2px;
- 
+.icone-header {
   font-size: 24px;
- }
-    
-  
-  
- 
-  
-   .badge-2 {
-    position: absolute;
-    top: -2px;
-    right: 6px;
-    padding: 2px 4px;
-    border-radius: 50%;
-    font-size: 1rem;
-    color: white;
+  color    : green;
+
+}
+
+
+.titre {
+  position: relative;
+  top     : 48.5%;
+
+  width: 100%;
+
+  text-align    : center;
+  font-family   : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size     : 3rem;
+  text-transform: uppercase;
+
+  margin: 2rem;
+
+
+
+  & {
+    animation-duration       : .8s;
+    animation-timing-function: ease-in-out;
+    animation-name           : gaucheVersDroite;
   }
 
-  .img-page2{
-    width: 10rem;
-    height: 10rem;
+}
+
+
+
+@keyframes gaucheVersDroite {
+
+  0% {
+    opacity  : 0;
+    transform: translateX(-10rem);
+
   }
-  .input-panier{
-     width: 5rem;
+
+  70% {
+    opacity  : .6;
+    transform: translateX(10rem);
+
   }
-  .panier{
-    height: 3rem;
-    color: white;
-    text-transform: capitalize;
-    font-size: 20px;
+
+  100% {
+    opacity  : 1;
+    transform: translateX(0);
   }
-  .section-panier{
-    background-color: rgb(195, 245, 197);
-    width: 80%;
-    margin-left: 8rem;
-    padding: 2rem;
-    margin-top: 2rem;
+}
+
+
+@keyframes droiteVersGauche {
+
+  0% {
+    opacity  : 0;
+    transform: translateX(-10rem);
+
   }
-  .td-panier{
-    margin-left: 1rem;
+
+  70% {
+    opacity  : .5;
+    transform: translateX(10rem);
+
   }
-  .btn-panier{
-    color: white;
-    width: 13rem;
+
+  100% {
+    opacity  : 1;
+    transform: translateX(0);
   }
-  .div-panier{
-    margin-left: 15rem;
-  }
-  .ajouter{
-   margin-left:   5rem;
-   width: 6rem;
-    
-  }
+}
+
+.mesur {
+  width : 19rem;
+  height: 20rem;
+}
+
+footer {
+  display: block;
+
+}
+
+.icon-footer {
+  color: white;
+}
+
+.liste {
+  display   : inline-block;
+  list-style: none;
+  text-align: center;
+
+
+}
+
+.btn-footer {
+  width : 6rem;
+  height: 3rem;
+}
+
+.input-footer {
+  height: 3rem;
+}
+
+
+
+.notification {
+
+  color          : white;
+  text-decoration: none;
+  padding        : 11px 2px;
+  position       : relative;
+}
+
+
+
+.notification:hover {
+  background: orange;
+}
+
+.notification .badge {
+  position      : absolute;
+  top           : 14px;
+  right         : -13px;
+  padding       : 9px px;
+  background    : orange;
+  color         : white;
+  text-transform: none;
+}
+
+.notification-2 {
+
+  background-color: white;
+  color           : green;
+  text-decoration : none;
+  padding         : 15px 26px;
+  position        : relative;
+  display         : inline-block;
+  border-radius   : 2px;
+
+  font-size: 24px;
+}
+
+
+
+
+
+.badge-2 {
+  position     : absolute;
+  top          : 8px;
+  right        : 55px;
+  padding      : 0px 6px;
+  border-radius: 50%;
+  font-size    : 1rem;
+  color        : white;
+}
+
+.img-page2 {
+  width : 10rem;
+  height: 10rem;
+}
+
+.input-panier {
+  width: 5rem;
+}
+
+.panier {
+  height        : 3rem;
+  color         : white;
+  text-transform: capitalize;
+  font-size     : 20px;
+}
+
+.section-panier {
+  background-color: rgb(195, 245, 197);
+  width           : 80%;
+  margin-left     : 8rem;
+  padding         : 2rem;
+  margin-top      : 2rem;
+}
+
+.td-panier {
+  margin-left: 1rem;
+}
+
+.btn-panier {
+  color: white;
+  width: 13rem;
+}
+
+.div-panier {
+  margin-left: 15rem;
+}
+
+.ajouter {
+  margin-left: 5rem;
+  width      : 6rem;
+
+}
+
+#shopping_card_details {
+  border          : 1px solid black;
+  width           : 20rem;
+  visibility      : hidden;
+  position        : absolute;
+  right           : 0;
+  background-color: white;
+}

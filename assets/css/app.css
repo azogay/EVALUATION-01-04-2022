@@ -173,9 +173,9 @@ footer {
 
 .badge-2 {
   position: absolute;
-  top: -2px;
-  right: 6px;
-  padding: 2px 4px;
+  top: 8px;
+  right: 55px;
+  padding: 0px 6px;
   border-radius: 50%;
   font-size: 1rem;
   color: white;
@@ -221,6 +221,15 @@ footer {
 .ajouter {
   margin-left: 5rem;
   width: 6rem;
+}
+
+#shopping_card_details {
+  border: 1px solid black;
+  width: 20rem;
+  visibility: hidden;
+  position: absolute;
+  right: 0;
+  background-color: white;
 }
 
 /*# sourceMappingURL=app.css.map */
