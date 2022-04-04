@@ -1,0 +1,27 @@
+[
+    {
+        "product_id": "p1",
+        "name": "Miel Eucalyptus",
+        
+        "unit_price": 25
+    },
+    {
+        "product_id": "p2",
+        "name": "Fromage",
+      
+        "unit_price": 10
+    },
+    {
+        "product_id": "p3",
+        "name": "chocolat bio",
+        
+        "unit_price": 15
+    },
+    {
+        "product_id": "p4",
+        "name": "Huile d'olive",
+        
+        "unit_price": 20
+    }
+   
+]

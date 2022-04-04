@@ -4,12 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/app.css">
-  </link>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/app.css" />
+  <link href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
   <title> PRODUIT BIO</title>
 </head>
 
@@ -35,51 +34,20 @@
     <div class="icon col-md-2 ">
       <i class='far fa-heart icone-header ' style="margin-right: 1.5rem;"></i>
       <i class='fas fa-address-book icone-header'></i>
-      <a href="produit"><i class='fas fa-archive   notification-2 '></i></a>
-      <span><a href="#" onclick="showHideElement('shopping_card_details')"><span
-            class="badge-2 bg-warning">3</span></a></span>
+      <a href="produit.html"><i class='fas fa-archive   notification-2 '></i></a>
+
+      <span><a href="#" onclick="showHideElement('shopping_card_details')"><span class="badge-2 bg-warning"
+            id="cart_nbr_items">0</span></a></span>
+    </div>
     </div>
 
-    </div>
+    <div id="zone_cart"></div>
   </header>
-  <div id="shopping_card_details">
-    <table  class=" table-panier">
-      <tr class="col-12 ">
-        <td class="col-md-6 fw-bold">2ITEMS</td>
-        <td class="col-md-6 fw-bold">VIEW CART</td>
-      </tr>
-    </table>
-    <hr>
-    <table class=" table-panier">
-     
-      
-      <tr class="col-12  ">
-        <td class="col-md-6 ">
-          <h5>Fromage</h5> 
-        <p>3kg - 20.00$</p></td>
-        <td class="col-md-6 "><img src="assets/images/produit/fromage.jpg" class="img-panier"></td>
-      </tr>
-      <tr class="col-md-12  ">
-        <td class=" col-md-6">
-          <h5>Miel</h5> 
-        <p>1kg - 15.00$</p></td>
-        <td class="col-md-6 "><img src="assets/images/produit/miel.jpg" class="img-panier"></td>
-      </tr>
-      <tr class="col-md-12 ">
-        <td class="col-md-6 fw-bold">TOTAL</td>
-        <td class="col-md-6">35.00$</td>
-      </tr>
-      
-    
-    </table>
-    <button class="btn-panier bg-success m-2 ">CHECKOUT</button>
-    
-  </div>
 
   <nav class="bg-success ">
     <ul class="text-light text-uppercase fs-5 fw-bold">
       <li class="nav-item ">
-        <a class="nav-link text-light" href="page2.html">Home</a>
+        <a class="nav-link text-light" href="produit.html">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-light dropdown-toggle" data-toggle="dropdown" href="#">product</a>
@@ -151,40 +119,47 @@
 
       </div>
   </section>
-  <div class="bg-success p-2"></div>
+  <div class="bg-success p-2" id="produit"></div>
   <div class="row m-4">
     <div class="card col-3" style="width: 20rem;">
-      <img src="assets/images/produit/miel.jpg " class="mesur" alt="miel">
+      <img src="assets/images/produit/p1.jpg " class="mesur" alt="miel">
       <div class="card-body">
         <h5 class="card-title fw-bold text-center">Miel Eucalyptus</h5>
         <p class="card-text text-center">$ 25.00</p>
-        <button class="ajouter">ajouter</button>
+        <a href="">
+          <button class="ajouter" onclick="addItemToCart('p1',1)">ajouter</button>
+        </a>
       </div>
     </div>
     <div class="card col-3" style="width: 20rem;">
-      <img src="assets/images/produit/fromage.jpg" class="mesur" alt="fromage">
+      <img src="assets/images/produit/p2.jpg" class="mesur" alt="fromage">
       <div class="card-body">
         <h5 class="card-title fw-bold text-center">Fromage</h5>
         <p class="card-text text-center">$ 10.00</p>
-        <button class="ajouter">ajouter</button>
+        <a href="">
+          <button class="ajouter" onclick="addItemToCart('p2',1)">ajouter</button>
+        </a>
       </div>
     </div>
     <div class="card col-3 " style="width: 20rem;">
-      <img src="assets/images/produit/chocolat.jpg" class="mesur" alt="chocolat">
+      <img src="assets/images/produit/p3.jpg" class="mesur" alt="chocolat">
       <div class="card-body">
         <h5 class="card-title fw-bold text-center">chocolat bio</h5>
         <p class="card-text text-center">$ 15.00</p>
-        <button class="ajouter">ajouter</button>
+        <a href="">
+          <button class="ajouter" onclick="addItemToCart('p3',1)">ajouter</button>
+        </a>
       </div>
     </div>
 
     <div class="card col-3 " style="width: 20rem;">
-      <img src="assets/images/produit/huile.webp" class="mesur" alt="huile">
+      <img src="assets/images/produit/p4.jpg" class="mesur" alt="huile">
       <div class="card-body">
         <h5 class="card-title fw-bold text-center">Huile d'olive</h5>
         <p class="card-text text-center">$ 20.00</p>
-        <button class="ajouter">ajouter</button>
-
+        <a href="">
+          <button class="ajouter" onclick="addItemToCart('p4',1)">ajouter</button>
+        </a>
       </div>
     </div>
   </div>
@@ -282,8 +257,15 @@
   </footer>
 
   <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></scripT>
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <!-- jQuery dataTable plugin -->
+  <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#zone_cart").load("/cart.html");
+    });
+  </script>
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>

@@ -209,13 +209,22 @@ footer {
   margin-left: 1rem;
 }
 
-.btn-panier {
+.btn-panier1 {
   color: white;
   width: 13rem;
 }
 
+.btn-panier2 {
+  color: white;
+  width: 29rem;
+}
+
 .div-panier {
   margin-left: 15rem;
+}
+
+.icon-panier {
+  color: green;
 }
 
 .ajouter {
@@ -225,7 +234,6 @@ footer {
 
 #shopping_card_details {
   border: 1px solid black;
-  width: 16rem;
   visibility: hidden;
   position: absolute;
   right: 0;
@@ -239,6 +247,13 @@ footer {
 
 .table-panier {
   width: 20rem;
+}
+
+.span-panier {
+  font-size: 1.5rem;
+  background-color: #58a558;
+  margin-left: 14rem;
+  color: white;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -4,18 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <link rel="stylesheet" href="assets/css/app.css">
-  </link>
+  <link href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
   <title>PRODUIT BIO</title>
 </head>
 
 <body>
-
-
 
   <header class="row align-items-start ">
     <div class="col-md-3"><img src="assets/images/Logo-Bio.webp" alt="logo" width="100"></div>
@@ -37,49 +35,16 @@
       <i class='far fa-heart icone-header ' style="margin-right: 1.5rem;"></i>
       <i class='fas fa-address-book icone-header'></i>
       <a href="produit"><i class='fas fa-archive   notification-2 '></i></a>
-      <span><a href="#" onclick="showHideElement('shopping_card_details')"><span
-            class="badge-2 bg-warning">3</span></a></span>
+      <span><a href="#" onclick="showHideElement('shopping_card_details')"><span class="badge-2 bg-warning"
+            id="cart_nbr_items">0</span></a></span>
     </div>
+    <div id="zone_cart"></div>
   </header>
-
-  <div id="shopping_card_details">
-    <table  class=" table-panier">
-      <tr class="col-12 ">
-        <td class="col-md-6 fw-bold">2ITEMS</td>
-        <td class="col-md-6 fw-bold">VIEW CART</td>
-      </tr>
-    </table>
-    <hr>
-    <table class=" table-panier">
-     
-      
-      <tr class="col-12  ">
-        <td class="col-md-6 ">
-          <h5>Fromage</h5> 
-        <p>3kg - 20.00$</p></td>
-        <td class="col-md-6 "><img src="assets/images/produit/fromage.jpg" class="img-panier"></td>
-      </tr>
-      <tr class="col-md-12  ">
-        <td class=" col-md-6">
-          <h5>Miel</h5> 
-        <p>1kg - 15.00$</p></td>
-        <td class="col-md-6 "><img src="assets/images/produit/miel.jpg" class="img-panier"></td>
-      </tr>
-      <tr class="col-md-12 ">
-        <td class="col-md-6 fw-bold">TOTAL</td>
-        <td class="col-md-6">35.00$</td>
-      </tr>
-      
-    
-    </table>
-    <button class="btn-panier bg-success m-2 ">CHECKOUT</button>
-    
-  </div>
 
   <nav class="bg-success ">
     <ul class="text-light text-uppercase fs-5 fw-bold">
       <li class="nav-item ">
-        <a class="nav-link text-light" href="page1.html">Home</a>
+        <a class="nav-link text-light" href="index.html">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-light dropdown-toggle" data-toggle="dropdown" href="#">product</a>
@@ -169,24 +134,24 @@
           <img src="assets/images/vent/fraise.jpg " alt="fraise" class="img-page2">
         </div>
         <div class="col-md-3">
-          <h3> Fraise Bio</h3>
-          <p>Fruit star du printemps , le bonheur des petits et des grands</p>
+          <h3>Miel Eucalyptus</h3>
+          <p>Miel Eucalyptus star du printemps , le bonheur des petits et des grands</p>
 
         </div>
         <div class="col-md-2">12.00 $</div>
         <div class="col-md-2">
-          <button>-</button>
+          <button onclick="removeItemQuantity('p1')">-</button>
           <input type="text" class="quantite input-panier">
-          <button>+</button>
+          <button onclick="addItemQuantity('p1')">+</button>
         </div>
 
         <div class="priceTab col-md-1">120€</div>
-        <i class="fa-solid fa-trash-can col-md-1"></i>
+        <a href="" onclick="removeItemFromCart('p1')" class="col-md-1 "><i class="fa-solid fa-trash-can icon-panier"></i></a>
 
       </div>
       <div class="row ">
         <div class="col-md-3">
-          <img src="assets/images/vent/orange.jpg " alt="fraise" class="img-page2">
+          <img src="assets/images/vent/orange.jpg " alt="orange" class="img-page2">
         </div>
         <div class="col-md-3">
           <h3>Orange Bio</h3>
@@ -201,7 +166,7 @@
         </div>
 
         <div class="priceTab col-md-1">100€</div>
-        <i class="fa-solid fa-trash-can col-md-1"></i>
+        <a href="" onclick="removeItemFromCart('p2')" class="col-md-1"><i class="fa-solid fa-trash-can icon-panier"></i></a>
 
       </div>
       <div class="row ">
@@ -221,7 +186,7 @@
         </div>
 
         <div class="priceTab col-md-1">170€</div>
-        <i class="fa-solid fa-trash-can col-md-1"></i>
+        <a href="" onclick="removeItemFromCart('p3')" class="col-md-1"><i class="fa-solid fa-trash-can icon-panier "></i></a>
 
       </div>
     </div>
@@ -260,7 +225,7 @@
 
 
 
-        <button class="btn-panier bg-success ">CHECKOUT</button>
+        <button class="btn-panier1 bg-success ">CHECKOUT</button>
       </div>
     </div>
 
@@ -330,7 +295,13 @@
 
   </footer>
 
-  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/main.js"></script>
-
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></scripT>
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <!-- jQuery dataTable plugin -->
+  <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#zone_cart").load("/cart.html");
+    });
+  </script>
 </body>
