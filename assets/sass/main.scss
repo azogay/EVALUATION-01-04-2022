@@ -271,10 +271,19 @@ footer {
 }
 
 #shopping_card_details {
-  border          : 1px solid black;
-  width           : 20rem;
-  visibility      : hidden;
-  position        : absolute;
+  border             : 1px solid black;
+  width              : 16rem;
+  visibility         : hidden;
+  position           : absolute;
   right           : 0;
-  background-color: white;
+  background-color   : rgb(195, 245, 197);
+  z-index            : 99;
+}
+
+.img-panier {
+  width: 70px;
+  
+}
+.table-panier{
+  width: 20rem;
 }
