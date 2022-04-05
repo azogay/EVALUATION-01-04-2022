@@ -216,7 +216,8 @@ footer {
 
 .btn-panier2 {
   color: white;
-  width: 29rem;
+  width: 24rem;
+  margin-left: 4rem;
 }
 
 .div-panier {
@@ -251,8 +252,7 @@ footer {
 
 .span-panier {
   font-size: 1.5rem;
-  background-color: #58a558;
-  margin-left: 14rem;
+  margin-left: 15rem;
   color: white;
 }
 
