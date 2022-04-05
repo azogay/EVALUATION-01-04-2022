@@ -116,7 +116,7 @@
       </div>
   </section>
   <section>
-    <div class="row col-md-12 bg-warning panier">
+    <nav class="row col-md-12 bg-warning panier">
 
       <div class="col-md-3  ">Product</div>
       <div class="col-md-3 ">Name</div>
@@ -125,11 +125,11 @@
       <div class="col-md-1 ">Total</div>
       <i class="fa-solid fa-trash-can col-md-1 " style="font-size:24px ; color: white;"></i>
 
-    </div>
+    </nav>
   </section>
   <section class="card section-panier " id="produit">
     <div>
-      <div class="row ">
+      <div class="row col-md-12 ">
         <div class="col-md-3">
           <img src="assets/images/vent/fraise.jpg " alt="fraise" class="img-page2">
         </div>
@@ -146,10 +146,10 @@
         </div>
 
         <div class="priceTab col-md-1">120€</div>
-        <a href="" onclick="removeItemFromCart('p1')" class="col-md-1 "><i class="fa-solid fa-trash-can icon-panier"></i></a>
+        <a href="" onclick="removeItemFromCart('miel')" class="col-md-1 "><i class="fa-solid fa-trash-can icon-panier"></i></a>
 
       </div>
-      <div class="row ">
+      <div class="row col-md-12">
         <div class="col-md-3">
           <img src="assets/images/vent/orange.jpg " alt="orange" class="img-page2">
         </div>
@@ -166,10 +166,10 @@
         </div>
 
         <div class="priceTab col-md-1">100€</div>
-        <a href="" onclick="removeItemFromCart('p2')" class="col-md-1"><i class="fa-solid fa-trash-can icon-panier"></i></a>
+        <a href="" onclick="removeItemFromCart('fromage')" class="col-md-1"><i class="fa-solid fa-trash-can icon-panier"></i></a>
 
       </div>
-      <div class="row ">
+      <div class="row col-md-12 ">
         <div class="col-md-3">
           <img src="assets/images/vent/kiwi.jpg " alt="fraise" class="img-page2">
         </div>
@@ -182,18 +182,18 @@
         <div class="col-md-2">
           <button>-</button>
           <input type="text" class="quantite input-panier">
-          <button>+</button>
+          <button onclick="addButton('kiwi', 1)">+</button>
         </div>
 
         <div class="priceTab col-md-1">170€</div>
-        <a href="" onclick="removeItemFromCart('p3')" class="col-md-1"><i class="fa-solid fa-trash-can icon-panier "></i></a>
+        <a href="" onclick="removeItemFromCart('chocolat')" class="col-md-1"><i class="fa-solid fa-trash-can icon-panier "></i></a>
 
       </div>
     </div>
-    <div class="row m-md-4 ">
+    <div class="row  col-md-12 m-3">
       <div class="col-md-6">
         <input type="text" id="name" name="name" placeholder="Entrer Your coupon">
-        <button class="bg-success">APPLY</button>
+        <button class="bg-success APPLY">APPLY</button>
       </div>
 
       <div class="col-md-6 w-25 card div-panier ">

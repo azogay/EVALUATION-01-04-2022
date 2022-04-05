@@ -11,10 +11,10 @@ class OrderItem {
     quantity = 0;
     
     unit_price = 0;
-    constructor(product_id, quantity, color, size, unit_price) {
+    constructor(product_id, quantity, unit_price) {
         this.product_id = product_id;
         this.quantity = quantity;
-        this.color = color;
+        
         
         this.unit_price = unit_price;
     }
@@ -98,6 +98,7 @@ function addItemToCart(product_id, quantity) {
     saveShoppingCarte(shopping_cart);
 }
 
+
 function removeItemFromCart(product_id) {
     let shopping_cart = loadShoppingCarte();
     shopping_cart.removeItem(product_id);
@@ -140,11 +141,6 @@ function loadShoppingCarte() {
 
 
 
-function clearShoppingCart() {
-    let shopping_cart = loadShoppingCarte();
-    shopping_cart.clearItems();
-    saveShoppingCarte(shopping_cart);
-}
 
 
 function loadProductsDataSet() {
